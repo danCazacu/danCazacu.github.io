@@ -104,7 +104,7 @@ ol li
 { padding-bottom: 40px;}
 
 #header
-{ background: transparent url(logo.jpg) no-repeat;}
+{ background: transparent url(logo.jpg) no-repeat; background-size:cover}
 
 #logo
 { width: 860px;
