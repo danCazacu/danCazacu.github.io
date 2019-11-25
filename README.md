@@ -1,2 +1,1 @@
-# andreeaprodan.github.io
-Technical report for WTra, WADe
+# dancazacu.github.io
