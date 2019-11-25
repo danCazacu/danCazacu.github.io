@@ -3,8 +3,8 @@
 
 <head>
   <title>WTra WADe</title>
-  <meta name="description" content="This is a page where you can find the technical report for WTra" />
-  <meta name="keywords" content="project, infoiasi, wade, web, wtra" />
+  <meta name="description" content="This is a page where we track the project progress." />
+  <meta name="keywords" content="project, infoiasi, wade, web, wtra, traffic, signs," />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
@@ -15,14 +15,46 @@
       <div id="logo">
         <div id="logo_text">
           <h1><a href="index.html">WADe<span class="logo_colour">WTra</span></a></h1>
-          <h2>Technical report for Web Traffic Signs Project.</h2>
+          <h2>Web Traffic Signs project progress page.</h2>
         </div>
       </div>
     </div>
     <div id="site_content">
       <div id="content">
-        <h1>WTra</h1>
-        <p> Technical report</p>
+        <h1>WTra. Web Traffic Signs</h1>
+        <section>
+          <h2>Who We Are</h2>
+          <p><img src="style/softwareEngineer.jpg" alt="SoftwareEngineer" style="float:right" align = "middle">
+            <br/>Hi, <br/><br> We are Andreea Prodan and Dan-Gabriel Cazacu, two students at Faculty of Computer Science from Iasi. <br/>We are following Software Engineering master studies.
+          </p>
+        </section>
+        <br/> <br/>
+
+        <section>
+          <h2>What is this page about</h2>
+          <p><img src="style/signRecognition.jpg" alt="Car Sign Recognition" style="float:left;border-radius: 50%; padding-right: 1em" hspace = "20" align = "middle"><br/> Currently we are following <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/"> Web Application Development </a> course sustained by <a href= "https://profs.info.uaic.ro/~busaco/"> Sorin Buraga </a> and this page will be used to keep track of <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/projects/#web-route-sign">Web Traffic Sign </a> project evolution .<br/> This project is about creating a (micro-)service-base Web system able to detect traffic signs from a video received as input. <br/> As sign recognition system will be used an existing open source project, the scope of the project being the creation of an OWL ontology and the creation of SPARQL end-point(s) for offering information about road signs: type, legal regulation, context of use, etc. </p>
+        </section>
+                <br/> <br/>
+
+        <section>
+          <h2>Current status</h2>
+          <p><img src="style/APICallResponses.jpg" alt="API call responses" style="float:right; border-radius: 15px 50px 15px 50px; padding-left: 1em" align = "middle" >
+            <br/>We created the architecture. <br/> The main idea that the user will have to upload a video, and will receive a http status 201 created, if the upload will be with suceess, or 403 forbidden if the user is not authenticated. <br/> The user will also could get all traffic signs from database. Same as above, only that he will receive 200 OK and the JSON list with the traffic sings if everything worked well. <br/> Also he will be able to get traffic signs list that were found in a video, by the video id, and get traffic sign information by traffic sign id.
+          </p>
+        </section>
+        <br/> <br/>
+
+        <section>
+          <h2>Next steps</h2>
+          <ul>
+            <li>OAuth web service authentification</li>
+            <li>Standard LogIn/SignUp authentification service</li>
+            <li>Create traffic signs database</li>
+            <li>Introduction of a video recording and recognition of signs</li>
+            <li>OWL ontology creation</li>
+            <li>SPARQL end-point creation</li>
+        </ul>
+        </section>
       </div>
     </div>
     <div id="footer">
