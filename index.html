@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
   <title>WTra WADe</title>
   <meta name="description" content="This is a page where we track the project progress." />
   <meta name="keywords" content="project, infoiasi, wade, web, wtra, traffic, signs," />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
@@ -24,7 +24,7 @@
         <h1>WTra. Web Traffic Signs</h1>
         <section>
           <h2>Who We Are</h2>
-          <p><img src="style/softwareEngineer.jpg" alt="SoftwareEngineer" style="float:right" align = "middle">
+          <p><img src="style/softwareEngineer.jpg" alt="SoftwareEngineer" style="float:right">
             <br/>Hi, <br/><br> We are Andreea Prodan and Dan-Gabriel Cazacu, two students at Faculty of Computer Science from Iasi. <br/>We are following Software Engineering master studies.
           </p>
         </section>
@@ -32,13 +32,13 @@
 
         <section>
           <h2>What is this page about</h2>
-          <p><img src="style/signRecognition.jpg" alt="Car Sign Recognition" style="float:left;border-radius: 50%; padding-right: 1em" hspace = "20" align = "middle"><br/> Currently we are following <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/"> Web Application Development </a> course sustained by <a href= "https://profs.info.uaic.ro/~busaco/"> Sabin-Corneliu Buraga </a> and this page will be used to keep track of <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/projects/#web-route-sign">Web Traffic Sign </a> project evolution .<br/> This project is about creating a (micro-)service-base Web system able to detect traffic signs from a video received as input. <br/> As sign recognition system will be used an existing open source project, the scope of the project being the creation of an OWL ontology and the creation of SPARQL end-point(s) for offering information about road signs: type, legal regulation, context of use, etc. </p>
+          <p><img src="style/signRecognition.jpg" alt="Car Sign Recognition" style="float:left;border-radius: 50%; padding-right: 1em"><br/> Currently we are following <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/"> Web Application Development </a> course sustained by <a href= "https://profs.info.uaic.ro/~busaco/"> Sabin-Corneliu Buraga </a> and this page will be used to keep track of <a href="https://profs.info.uaic.ro/~busaco/teach/courses/wade/projects/#web-route-sign">Web Traffic Sign </a> project evolution .<br/> This project is about creating a (micro-)service-base Web system able to detect traffic signs from a video received as input. <br/> As sign recognition system will be used an existing open source project, the scope of the project being the creation of an OWL ontology and the creation of SPARQL end-point(s) for offering information about road signs: type, legal regulation, context of use, etc. </p>
         </section>
                 <br/> <br/>
 
         <section>
           <h2>Status week 9 - D component of the project</h2>
-          <p><img src="style/APICallResponses.jpg" alt="API call responses" style="float:right; border-radius: 15px 50px 15px 50px; padding-left: 1em" align = "middle" >
+          <p><img src="style/APICallResponses.jpg" alt="API call responses" style="float:right; border-radius: 15px 50px 15px 50px; padding-left: 1em">
             <br/>We created the architecture. <br/> The main idea that the user will have to upload a video, and will receive a http status 201 created, if the upload will be with suceess, or 403 forbidden if the user is not authenticated. <br/> The user will also could get all traffic signs from database. Same as above, only that he will receive 200 OK and the JSON list with the traffic sings if everything worked well. <br/> Also he will be able to get traffic signs list that were found in a video, by the video id, and get traffic sign information by traffic sign id.
           </p>
         </section>
@@ -46,12 +46,11 @@
 		
 		<section>
           <h2>LogIn / Register </h2>
-          <p><img src="style/Register.jpg" alt="Register" style="float:right; border-radius: 15px 50px 15px 50px; padding-right: 1em" align = "middle" >
+          <p><img src="style/Register.jpg" alt="Register" style="float:right; border-radius: 15px 50px 15px 50px; padding-right: 1em">
             <br/> <br/>  <br/> The user has to register first in order to have access to the application. The password will be sent encoded in Base64. The database used for storing the users is AmazonRDS.
           </p>
 		  <br/> <br/> <br/>
-		  <section>
-		   <p><img src="style/LogIn.jpg" alt="LogIn" style="float:left; border-radius: 15px 50px 15px 50px; padding-right: 1em" hspace = "20"  align = "middle" >
+		  <p><img src="style/LogIn.jpg" alt="LogIn" style="float:left; border-radius: 15px 50px 15px 50px; padding-right: 1em">
             <br/>  <br/>  <br/><br/><br/><br/><br/>   After registration the user can log in to use the available services. A token will be generated and stored in cookies for security reasons. The token is set to expire after 1 minute. Without this token, the user has not rights to upload videos.
           </p>
         </section>
@@ -67,11 +66,13 @@
 		 <p><img src="style/OwlProtege.jpg" alt="OWL Protege" style="float:left; border-radius: 15px 25px 15px 25px; padding-right: 1em" hspace = "20"  align = "middle" >
             OWL ontology was developed by using <b>Protege 5.5.0</b> 
 			There are 5 types of traffic signs (which are subclasses of Traffic Signs): 
-			<li><i>Information</i> Sign </li>
-			<li><i>Mandatory</i> Sign </li>
-			<li><i>Priority</i> Sign </li>
-			<li><i>Prohibitory</i> Sign </li>
-			<li><i>Warning</i> Sign </li>
+			<ul>
+				<li><i>Information</i> Sign </li>
+				<li><i>Mandatory</i> Sign </li>
+				<li><i>Priority</i> Sign </li>
+				<li><i>Prohibitory</i> Sign </li>
+				<li><i>Warning</i> Sign </li>
+			</ul>
 			<br> Each type of sings has defined some traffic signs that are part of it. Each sign has properties as <i>applicableTo</i> (Driver/Pedestrian), <i>hasForm</i>, <i>hasBackgrondColor</i>, <i>hasBorderColor</i> so can be defined with different properties. For example a sign can have red border and white background in Romania, but black border and yellow background in Finland.
 			<br> Also in OWL was defined the class <b>Country</b> with only a few countries added at this moment. Each country has a code (known by anyone and international) and also has object properties <i>hasSign</i> and <i>hasNotSign</i> as there are countries were some of the traffic signs are not applicable to.
 			
@@ -81,8 +82,16 @@
 		
 		<section>
 		<h2> Stardog </h2>
-			<p><img src="style/Stardog.jpg" alt="Stardog" style="float:right; border-radius: 15px 25px 15px 25px; padding-left: 1em" hspace = "20"  align = "middle" >
+			<p><img src="style/Stardog.jpg" alt="Stardog" style="float:right; border-radius: 15px 25px 15px 25px; padding-left: 1em">
 			We configured <b>Stardog</b> on an <i>Amazon EC2 T2.medium</i> machine. At first we couldn't configure <b>Stardog</b> in AWS services so we tried to use <b>Fuseki</b>.We gave more tries to configure (and we succeeded) the <b>Stardog</b> as after some more investigation we saw that is way better - has high performance reasoning, high availability, uses knowledge graphs instead of <i>Fuseki</i> which is used only as RDF storage and query DBMS engine.
+			</p> 
+		</section>
+		<br/> <br/>
+		
+		<section>
+		<h2> HTML Page validations </h2>
+			<p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdancazacu.github.io%2F/">Progress page validation</a>
+			<p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fandreeaprodan.github.io%2F/">Technical report page validation</a>
 			</p> 
 		</section>
 		<br/> <br/>
@@ -96,12 +105,10 @@
 			<li>Integrate the system with other tools (e.g. Waze)</li>
         </ul>
         </section>
-      </div>
     </div>
     <div id="footer">
     	<p> WADe_WTra </p>
       <p>Copyright &copy; night_sky_2</p>
     </div>
-  </div>
 </body>
 </html>

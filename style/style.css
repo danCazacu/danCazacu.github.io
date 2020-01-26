@@ -76,20 +76,12 @@ blockquote
   background: #FFF;}
 
 ul
-{ margin: 2px 0px 18px 16px;
+{ margin: 0px 0px 0px 100px;
   padding: 0px;}
 
 ul li
 { list-style-type: square;
-  margin: 0px 0px 6px 0px; 
-  padding: 0px;}
-
-ol
-{ margin: 8px 0px 0px 24px;
-  padding: 0px;}
-
-ol li
-{ margin: 0px 0px 11px 0px; 
+  margin: 0px 0px 3px 0px; 
   padding: 0px;}
 
 #main, #logo, #site_content, #footer
