@@ -58,6 +58,17 @@
 		
 		<section>
 		<h2> After LogIn </h2>
+			<p><img src="style/VideoUpload.jpg" alt="Upload Video" style="float:right; border-radius: 15px 50px 15px 50px; padding-right: 1em">
+				<br/> <br/>  <br/> You can load videos from your pc. The video will be saved in the database, and parsed for getting the results. To see the results from the video parsing please go to <b>Your Uploads</b> page.
+			  </p>
+			  <br/> <br/> <br/> <br/>
+			  <p><img src="style/YourUploads.jpg" alt="Your Uploads" style="float:left; border-radius: 15px 50px 15px 50px; padding-right: 1em">
+				<br/>This page is where you can see what videos you uploaded and the result for each. The result shows how long the video is, the name, and the country from where the video is. Also for each sign spotted it is showed the name, the video stamp where it appears, and longitude and latitude coordinates. Also a description of the sign can be found when you hover the image.
+			  </p>
+		  	<br/> 
+			<p><img src="style/TrafficSigns.jpg" alt="Traffic Signs" style="float:right; border-radius: 15px 50px 15px 50px; padding-right: 1em">
+				<br/> <br/>  <br/> You can see what traffic signs are we currently supported from <b> Traffic Signs </b> page. The traffic signs are loaded by using a <i>SPARQL Query</i> via <i>StarDog</i> <img src="style/GetSignsSparqlQuery.jpg" alt="Get Signs SPARQL Query" style="float:left; border-radius: 15px 50px 15px 50px; padding-right: 1em">.
+			  </p>
 		</section>
 		<br/> <br/> <br/> <br/> <br/>
 		
@@ -82,6 +93,7 @@
 		<h2> Stardog </h2>
 			<p><img src="style/Stardog.jpg" alt="Stardog" style="float:right; border-radius: 15px 25px 15px 25px; padding-left: 1em">
 			We configured <b>Stardog</b> on an <i>Amazon EC2 T2.medium</i> machine. At first we couldn't configure <b>Stardog</b> in AWS services so we tried to use <b>Fuseki</b>.We gave more tries to configure (and we succeeded) the <b>Stardog</b> as after some more investigation we saw that is way better - has high performance reasoning, high availability, uses knowledge graphs instead of <i>Fuseki</i> which is used only as RDF storage and query DBMS engine.
+			<br/><a href="http://ec2-18-203-95-141.eu-west-1.compute.amazonaws.com:5820/">Here</a> you can play with our ontology.
 			</p> 
 		</section>
 		<br/> <br/>
@@ -91,6 +103,7 @@
 			<ul>
 				<li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdancazacu.github.io%2F/">Progress page validation</a></li>
 				<li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fandreeaprodan.github.io%2F/">Technical report page validation</a></li>
+				<li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Ftutorial.wtra%2Findex.html/">User guide</a></li>
 			</ul>
 		</section>
 		<br/> <br/>
